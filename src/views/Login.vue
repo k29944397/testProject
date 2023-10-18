@@ -17,7 +17,7 @@ export default{
 
 <template>
     <body>
-        <div class="loginpage">
+        <div class="loginpage ">
         <div class="email">
             Email
         </div>
@@ -58,7 +58,6 @@ body{
     height: auto;
     background-color: $maincolor;
     margin: 0 40vw;
-    position: relative;
 }
 .email{
     color:#344054 ;
@@ -69,7 +68,7 @@ input{
     border-radius: 6px;
 }
 .fa-envelopes-bulk {
-    top: 30px;
+    top: 40px;
     left: 5px;
     position: absolute;
 }

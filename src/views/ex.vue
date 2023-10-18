@@ -2,6 +2,9 @@
 export default{
     data(){
         //值
+        return{
+
+        }
     },
     components:{
         //匯入
