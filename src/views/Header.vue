@@ -47,7 +47,7 @@ export default{
                         <RouterLink to="/Sagasu">店舗﹒アクセス</RouterLink>
                 </div>
                 <div class="col-6">
-                    <img src="https://th.bing.com/th/id/OIP.9cdcALC8fz5vN-rip2uB0AHaHa?pid=ImgDet&rs=1" alt="">810-1145141919
+                    <img src="../../pic/OIP.jpg" alt="">810-1145141919
                     <span class="loginBtn"><RouterLink to="/Login">ログイン</RouterLink></span>
                     <span class="mm">|</span>
                     <span class="qaBtn"><RouterLink to="/Q&A">お問い合わせ</RouterLink></span>
@@ -64,6 +64,7 @@ a{text-decoration:none}
 a:hover{text-decoration:none}
 
 .topnav{
+    white-space:nowrap; 
     margin: 0;
     position: relative;
     height: 15vh;

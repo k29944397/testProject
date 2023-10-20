@@ -1,4 +1,5 @@
 <script>
+import {RouterLink} from 'vue-router'
 export default{
     data(){
         //值
@@ -20,10 +21,9 @@ export default{
         <div class="loginpage ">
         <div class="email">
             Email
+            <input class="mailbox" type="text" placeholder="xxx114514@gmail.com" style="width:300px;">
+            <i class="fa-solid fa-envelopes-bulk"></i>
         </div>
-        <input class="mailbox" type="text" placeholder="xxx114514@gmail.com" style="width:300px;">
-        <i class="fa-solid fa-envelopes-bulk">
-        </i>
         <div class="password">
             Name/Password
         </div>
@@ -36,9 +36,9 @@ export default{
             </spen>
         </a>
         <div class="loginbtn">
-            <a href="#">
-                <button style="font-size: 16pt;">ログイン</button>
-            </a>
+            <RouterLink to="/Personal">
+                ログイン
+            </RouterLink>
         </div>
     </div>
     </body>
@@ -62,6 +62,7 @@ body{
 .email{
     color:#344054 ;
     font-size: 20px;
+    position: relative;
 }
 input{
     padding-left: 25px;
@@ -69,7 +70,7 @@ input{
 }
 .fa-envelopes-bulk {
     top: 40px;
-    left: 5px;
+    left: 0px;
     position: absolute;
 }
 input{
@@ -90,8 +91,17 @@ input{
     border-radius: 10px;
 }
 .loginbtn{
+    a{text-decoration:none}//超連結文字下方取消顯示底線
+    a:hover{text-decoration:none}//hover時↑
     margin-top: 3px;
-    button{
+    font-size: 16pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a:link{color:#fff;} //未經使用超連結的字體顏色
+        a:visited {color:#ffffff;}  // 已存取連結
+        a:hover {color:#ffffff;}  // 滑鼠移動到連結上
+        a:active {color:#ffffff;}  // 滑鼠點選時 
         height: 45px;
         width: 150px;
         margin-left: 30%;
@@ -105,6 +115,5 @@ input{
         &:active{
             border-radius: 0px;
         }
-    }
 }
 </style>

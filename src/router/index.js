@@ -29,6 +29,11 @@ const router = createRouter({
       name:'Sagasu',
       component:()=>import('../views/Sagasu.vue')
     },
+    {
+      path:'/Personal',
+      name:'Personal',
+      component:()=>import('../views/Personal.vue')
+    },
   ]
 })
 
